@@ -3,7 +3,7 @@ const https = require('http')
 const socketIo = require('socket.io')
 const cors= require('cors')
 const gamePlay = require('./routes')
-const port = 3000 || process.env.PORT
+const port = process.env.PORT
 
 const app = express()
 app.use(cors)
