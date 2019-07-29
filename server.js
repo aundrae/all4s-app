@@ -1,12 +1,12 @@
 const express = require('express')
-const https = require('http')
+const https = require('https')
 const socketIo = require('socket.io')
-const cors= require('cors')
+//const cors= require('cors')
 const gamePlay = require('./routes')
 const port = process.env.PORT || 3000
 
 const app = express()
-app.use(cors)
+//app.use(cors)
 const server = https.createServer(app)
 const io = socketIo(server);
 
