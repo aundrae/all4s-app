@@ -1,6 +1,6 @@
 module.exports = function(io){
 	clients=[]
-	io.of('/gameplay').on("connection", socket => {
+	io.of('gameplay').on("connection", socket => {
     console.log("New client connected");
     clients.push(socket.id)
     //Here we listen on a new namespace called "incoming data"
